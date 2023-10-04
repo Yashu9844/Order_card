@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order
+
+    </title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .card{
+            height: 570px;
+            width: 370px;
+            background-color: white;
+            border-radius: 13px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+            gap: 25px;
+        }
+        .card img{
+            border-top-right-radius: 13px;
+            border-top-left-radius: 13px;
+            height: 35%;
+            width:100%;
+            /* width:30px; */
+            /* width:75px; */
+      
+
+        }
+        .text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+           /* width: 75%; */
+          text-align: center;
+          
+
+        }
+        #music{
+            width: 85%;
+            height: 57px;
+            background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,12,194,1) 17%, rgba(12,180,194,1) 22%);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 4px;
+        }
+        .left{
+            width: 4.5rem;
+            height:4rem;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+        }
+        .leftout img{
+            height: 3.7rem;
+            width: 3.7rem;
+        }
+       
+      .leftin p{
+        font-size: 15px;
+
+      }
+      /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
+    /* .payment{
+        width: 85%;
+            height: 57px;
+            background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(66,55,159,1) 100%, rgba(12,180,194,1) 100%);
+      border-radius: 10px;
+      text-align: center;
+      color:white ;
+    } */
+    #paybut{
+        height: 50px;
+        width: 85%;
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(66,55,159,1) 100%, rgba(12,180,194,1) 100%);
+      color: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    .cancel a{
+        text-decoration: none;
+        font-size: large;
+        font-weight: bolder;
+        color:black;
+    }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="icon.jpg" alt="order">
+            <div class="text">
+                <h2>Order Summary</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ab explicabo architecto amet cumque nisi.</p>
+            </div>
+            <div id="music">
+                <div class="left">
+                    <div class="leftout">
+                        <img src="mu.png" alt="music">
+    
+                    </div>
+                    
+                  
+                    <div class="leftin">
+                        <p>Annual plan</p>
+                        <p>$999.9\year</p>
+                    </div>
+                    
+                   </div>
+                   <div class="right">
+                    <a href="#">Change</a>
+                   </div>
+                    
+            </div>
+            <button id="paybut">
+                Proceed To Payment
+            </button>
+         <div class="cancel">
+            <a href="#">Cancel Order</a>
+         </div>
+            
+            
+        
+
+        </div>
+    </div>
+</body>
+</html>
